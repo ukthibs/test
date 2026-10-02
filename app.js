@@ -3,6 +3,7 @@ const passwordToggle = document.querySelector('#password-toggle');
 const loginForm = document.querySelector('#login-form');
 const formMessage = document.querySelector('#form-message');
 const googleButton = document.querySelector('#google-button');
+const githubButton = document.querySelector('#github-button');
 
 passwordToggle.addEventListener('click', () => {
   const showingPassword = passwordInput.type === 'password';
@@ -21,4 +22,9 @@ loginForm.addEventListener('submit', (event) => {
 googleButton.addEventListener('click', () => {
   formMessage.classList.remove('error');
   formMessage.textContent = 'Google sign-in can be enabled when authentication is connected.';
+});
+
+githubButton.addEventListener('click', () => {
+  formMessage.classList.remove('error');
+  formMessage.textContent = 'GitHub sign-in can be enabled when authentication is connected.';
 });
