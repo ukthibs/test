@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f5f6f2" />
+    <meta name="description" content="Sign in to your Northstar workspace." />
+    <title>Sign in — Northstar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="welcome-panel" aria-labelledby="welcome-title">
+        <a class="brand" href="#" aria-label="Northstar home">
+          <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+          <span>northstar</span>
+        </a>
+
+        <div class="welcome-copy">
+          <span class="eyebrow"><span class="eyebrow-dot"></span> YOUR SPACE TO DO GREAT WORK</span>
+          <h1 id="welcome-title">A clearer path<br />to <span>what’s next.</span></h1>
+          <p>Bring your ideas, your team, and your best work together in one calm, focused space.</p>
+        </div>
+
+        <div class="quote-card">
+          <div class="quote-stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote>“Northstar gives our team the clarity to focus on work that really matters.”</blockquote>
+          <div class="quote-author">
+            <div class="avatar" aria-hidden="true">JM</div>
+            <div><strong>Jamie Morgan</strong><span>Product lead, Form & Field</span></div>
+          </div>
+        </div>
+
+        <div class="panel-decoration decoration-one" aria-hidden="true"></div>
+        <div class="panel-decoration decoration-two" aria-hidden="true"></div>
+        <div class="panel-footer"><span>© 2026 Northstar, Inc.</span><span>Made for your next big thing <span class="footer-spark">✳</span></span></div>
+      </section>
+
+      <section class="form-panel" aria-labelledby="login-title">
+        <div class="form-topline"><span>New to Northstar?</span> <a href="#signup">Create an account <span aria-hidden="true">↗</span></a></div>
+
+        <div class="login-card">
+          <div class="mobile-brand brand" aria-label="Northstar"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span><span>northstar</span></div>
+          <div class="form-heading">
+            <div class="welcome-icon" aria-hidden="true">✳</div>
+            <h2 id="login-title">Welcome back</h2>
+            <p>Pick up right where you left off.</p>
+          </div>
+
+          <button class="google-button" type="button" id="google-button">
+            <svg aria-hidden="true" viewBox="0 0 18 18"><path fill="#4285F4" d="M17.64 9.2c0-.63-.06-1.24-.16-1.82H9v3.44h4.84a4.14 4.14 0 0 1-1.8 2.72v2.23h2.92c1.71-1.58 2.68-3.9 2.68-6.57Z"/><path fill="#34A853" d="M9 18c2.43 0 4.47-.81 5.96-2.2l-2.92-2.26c-.81.54-1.84.86-3.04.86-2.34 0-4.32-1.58-5.03-3.71H.96v2.33A9 9 0 0 0 9 18Z"/><path fill="#FBBC05" d="M3.97 10.69a5.4 5.4 0 0 1 0-3.38V4.98H.96a9 9 0 0 0 0 8.04l3.01-2.33Z"/><path fill="#EA4335" d="M9 3.58c1.32 0 2.5.45 3.43 1.35l2.57-2.57C13.47.9 11.43 0 9 0A9 9 0 0 0 .96 4.98l3.01 2.33C4.68 5.16 6.66 3.58 9 3.58Z"/></svg>
+            Continue with Google
+          </button>
+
+          <div class="divider"><span></span><p>or sign in with email</p><span></span></div>
+
+          <form id="login-form">
+            <label for="email">Email address</label>
+            <div class="input-wrap">
+              <svg class="input-icon" aria-hidden="true" viewBox="0 0 20 20"><rect x="2.5" y="4" width="15" height="12" rx="2"/><path d="m3.5 5 6.5 5 6.5-5"/></svg>
+              <input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required />
+            </div>
+
+            <div class="password-label"><label for="password">Password</label><a href="#reset">Forgot password?</a></div>
+            <div class="input-wrap">
+              <svg class="input-icon" aria-hidden="true" viewBox="0 0 20 20"><rect x="3" y="8" width="14" height="10" rx="2"/><path d="M6 8V5.5a4 4 0 0 1 8 0V8"/><path d="M10 12v2"/></svg>
+              <input id="password" name="password" type="password" placeholder="Enter your password" autocomplete="current-password" required minlength="8" />
+              <button class="password-toggle" type="button" aria-label="Show password" aria-pressed="false" id="password-toggle">Show</button>
+            </div>
+
+            <label class="remember-option"><input type="checkbox" name="remember" /><span class="custom-checkbox" aria-hidden="true"></span><span>Keep me signed in</span></label>
+            <button class="submit-button" type="submit">Sign in <span aria-hidden="true">→</span></button>
+            <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+          </form>
+
+          <p class="terms">By continuing, you agree to our <a href="#terms">Terms of Service</a> and <a href="#privacy">Privacy Policy</a>.</p>
+        </div>
+        <div class="security-note"><span aria-hidden="true">▣</span> Your workspace is private and secure</div>
+      </section>
+    </main>
+  </body>
+</html>
